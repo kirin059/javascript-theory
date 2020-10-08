@@ -22,8 +22,12 @@
        text-align: center;
        font-size: 20px;
        padding-left: 600px;
-       padding-right: 600px;  
+       padding-right: 600px;
      }
+    .footer{
+      text-align: left;
+      font-size: 20px;
+    }
     </style>
   </head>
 
@@ -35,22 +39,36 @@
   <div class="subject">
   <h2> Array </h2>
 
-  <script>
-    var kirin = ['neck', 'yellow', 163, 'nickname', 'sweet']
-  </script>
+    <script>
+      var kirin = ['neck', 'yellow', 163, 'nickname', 'sweet']
+    </script>
 
   <h2> Loop </h2></div>
   <div class="article">
-  <ul>
-  <script>
-    var i = 0;
-    while ( i < kirin.length ) {
-      document.write('<li> '+kirin[i]+' </li>');
-      i = i + 1;
-    }
-  </script>
-  </ul>
+    <ul>
+      <script>
+      var i = 0;
+      while ( i < kirin.length ) {
+        document.write('<li> '+kirin[i]+' </li>');
+        i = i + 1;
+      }
+      </script>
+    </ul>
   </div>
+
+
+  <div class="footer">
+  <script>
+  function button_enent(){
+    if(confirm('Go to the next page') == true){
+      location.replace('f.html');
+
+  }else {
+    return;
+    }
+  }
+      </script>
+  <input type="button" value="next" onclick="button_enent()">
 </div>
 </body>
 </html>
